@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TextUtils</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+<body>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Hiii!</strong>Welcome to text utils.
+  </div>
+<div class="container">
+  <form method="post" action="/analyze">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">EnterText:</label>
+      <textarea class="form-control" name="name" id="exampleFormControlTextarea1" rows="5" style="width: 500px;"></textarea>
+    </div>
+
+  <div class="custom-control custom-switch">
+    <input type="checkbox" name="fullcaps"class="custom-control-input" id="customSwitch2">
+    <label class="custom-control-label" for="customSwitch2">FullCaps</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" name="tolower" class="custom-control-input" id="customSwitch6">
+    <label class="custom-control-label" for="customSwitch6">Tolower</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" name="firstCase" class="custom-control-input" id="customSwitch4">
+    <label class="custom-control-label" for="customSwitch4">FirstCaps</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" name="newLineremover" class="custom-control-input" id="customSwitch3">
+    <label class="custom-control-label" for="customSwitch3">NewLineremover</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" name="removePunc" class="custom-control-input" id="customSwitch1">
+    <label class="custom-control-label" for="customSwitch1">RemovePunctuation</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" name="numRemover" class="custom-control-input" id="customSwitch7">
+    <label class="custom-control-label" for="customSwitch7">NumRemover</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" name="charCount" class="custom-control-input" id="customSwitch5">
+    <label class="custom-control-label" for="customSwitch5">CharCount</label>
+  </div>
+    <button type="submit" class="btn btn-dark mt-2" >Transform text</button>
+  </form>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>
